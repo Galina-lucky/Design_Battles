@@ -1,0 +1,86 @@
+.header {
+	background-color: $bg-color-secondary;
+	background-image: url(../image/fon-header.jpg);
+	background-size: cover;
+	padding-top: 30px;
+	min-height: 800px;
+
+	&__info {
+		margin-top: 230px;
+		color: $font-color-secondary;
+		text-align: center;
+		margin-bottom: 260px;
+	}
+
+	&__title {
+		font-size: $h1-font-size;
+		margin-bottom: 18px;
+	}
+
+	&__lead {
+    font-size: $h4-font-size;
+    margin-bottom: 70px;
+	}
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.link-logo {
+	font-size: $logo-font-size;
+	color: $font-color-secondary;
+	font-weight: 500;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin-right: -19px;
+	padding-left: 0;
+
+	&__item {
+	}
+
+	&__link {
+	  position: relative;
+		display: block;
+		padding: 7px 15px;
+		color: $font-color-secondary;
+		font-weight: 500;
+		outline: none;
+
+		&:hover {
+			color: $menu-hover-color;
+
+			&:before {
+			width: calc(100% - 30px); 
+	    background-color: $menu-hover-color;
+		  }
+		}
+
+		&:focus {
+      color: $menu-hover-color;
+		}
+
+		&:active {
+      color: darken($menu-hover-color, 15);
+		}
+
+		&:before {
+			display: block;
+			content: "";
+			position: absolute;
+			left: 15px;
+			bottom: 0; 
+			height: 2px;
+		  width: 0;
+		  background-color: transparent;
+		  transition: 0.5s ease-in-out width, 0.5s ease-in-out background-color, 0.5s ease-in-out color;
+		}
+	}
+}

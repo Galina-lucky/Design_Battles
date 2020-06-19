@@ -1,0 +1,100 @@
+.section-about {
+	padding-top: 150px;
+	padding-bottom: 153px;
+
+	&__title {
+		color: $h2-color;
+		margin-bottom: 90px;
+	}
+
+	&__lead {
+		font-size: $big-font-size;
+		margin-bottom: 140px;
+	}
+
+	&__title-list {
+		font-size: $h3-font-size;
+		margin-bottom: 85px;
+	}
+
+	&__list {
+    max-height: 370px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // justify-content: space-between; 
+    list-style: none;
+    margin-bottom: 15px;
+	}
+
+	&__item {
+		position: relative;
+		margin-bottom: 65px;
+		padding-left: 195px;
+		width: 50%;
+		// max-height: 2em*$line-height;
+		display: block;
+		flex: 1 0 2em*$line-height;
+		font-size: $xl-font-size;
+    font-weight: 500;
+    overflow: hidden;
+    border: 1px solid red;
+
+    &:before {
+    	content: " ";
+    	display: block;
+      position: absolute;
+			top: 7px;
+			left: 25px;
+			transform: rotate(-45deg);
+			width: 15px;
+			height: 15px;
+			border-right: 2px solid green;
+			border-bottom: 2px solid green;
+    }
+
+    &:after {
+
+    }
+	}
+
+	&__description {
+		margin-bottom: 70px;
+	}
+
+	&__dates {
+		font-size: $h4-font-size;
+		margin-bottom: 35px;
+	}
+
+	&__dates-description {
+		font-size: $m-font-size;
+		margin-bottom: 45px;
+	}
+
+	&__btn {
+		min-width: 458px;
+		padding: 0.88em 3.4090909em;
+		font-size: 22px;
+		font-weight: 400;	
+		color: $font-color-secondary;
+		background-color: $btn-bg-color;
+		border-color: transparent;
+
+		&:hover {
+      color: $btn-bg-color;
+      background-color: $font-color-secondary;
+      border-color: $btn-bg-color;
+      box-shadow: 0 0 15px $btn-bg-color;
+		}
+
+		&:focus {
+      background-color: lighten($btn-bg-color, 25);
+      box-shadow: 0 0 15px darken($btn-bg-color, 25);
+		}
+
+		&:active {
+      background-color: darken($btn-bg-color, 15);
+		}
+	}
+}
