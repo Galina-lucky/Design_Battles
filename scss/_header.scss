@@ -21,6 +21,21 @@
     font-size: $h4-font-size;
     margin-bottom: 70px;
 	}
+
+	&__btn {
+		&:hover {
+      background-color: rgba(225, 225, 225, 0.4);
+      box-shadow: 0 0 15px $bg-color-primary;
+		}
+
+		&:focus {
+      background-color: rgba(225, 225, 225, 0.4);
+		}
+
+		&:active {
+      background-color: rgba(225, 225, 225, 0.7);
+		}
+	}
 }
 
 .nav {

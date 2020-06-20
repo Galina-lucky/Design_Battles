@@ -6,6 +6,12 @@
 	margin-right: auto;
 }
 
+.img-responsive {
+	display: block;
+	min-width: 100%;
+	height: auto;
+}
+
 .btn {
 	display: inline-block;
 	min-width: 268px;
@@ -36,12 +42,82 @@
 	line-height: 1.818181;
 }
 
+.card {
+  margin-bottom: 30px;
+  flex: 0 0 33%;
+
+	&__avatar {
+		margin-bottom: 20px;
+		border-radius: 10px;
+	}
+
+	&__name {
+    font-size: $xl-font-size;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 15px;
+	}
+
+	&__position {
+		display: block;
+	  overflow: hidden;
+	  text-overflow: ellipsis; 
+	}
+}
+
+.list-cards {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+
+	&__card {
+	}
+}
+
+.enumerator {
+	max-width: 860px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	&__block {
+		background-color: $bg-color-enumerator;
+		flex: 0 0 19%;
+
+		&--transparent {
+      background-color: transparent;
+		}
+	}
+
+  &__number {
+		font-family: $font-family-secondary;
+    font-size: 72px;
+    font-weight: 700;
+	}
+
+	&__dimension {
+    font-family: $font-family-secondary;
+    font-size: 18px;
+    font-weight: 400;
+	}
+}
+
+.countdown {
+
+	&__title {
+		margin-bottom: 60px;
+	}
+
+	&__enumerator {
+
+	}
+}
 
 .section-jury {
 	padding-top: 150px;
 	padding-bottom: 120px;
-	// background: linear-gradient (to top, #ff00cc, #333399);
-	background: #000;
+	background: linear-gradient(to bottom, #339 0%, #f0c 100%);
 	color: $font-color-secondary;
 	text-align: center;
 
@@ -49,11 +125,12 @@
 		margin-bottom: 50px;
 	}
 
-	&__gallery {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
+	&__description {
+		margin-bottom: 45px;
 	}
 
+	&__list-cards {
+    margin-bottom: 70px;
+	}
 }
 
