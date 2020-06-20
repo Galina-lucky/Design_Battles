@@ -42,6 +42,8 @@
 	line-height: 1.818181;
 }
 
+
+
 .card {
   margin-bottom: 30px;
   flex: 0 0 33%;
@@ -75,62 +77,5 @@
 	}
 }
 
-.enumerator {
-	max-width: 860px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 
-	&__block {
-		background-color: $bg-color-enumerator;
-		flex: 0 0 19%;
-
-		&--transparent {
-      background-color: transparent;
-		}
-	}
-
-  &__number {
-		font-family: $font-family-secondary;
-    font-size: 72px;
-    font-weight: 700;
-	}
-
-	&__dimension {
-    font-family: $font-family-secondary;
-    font-size: 18px;
-    font-weight: 400;
-	}
-}
-
-.countdown {
-
-	&__title {
-		margin-bottom: 60px;
-	}
-
-	&__enumerator {
-
-	}
-}
-
-.section-jury {
-	padding-top: 150px;
-	padding-bottom: 120px;
-	background: linear-gradient(to bottom, #339 0%, #f0c 100%);
-	color: $font-color-secondary;
-	text-align: center;
-
-	&__title {
-		margin-bottom: 50px;
-	}
-
-	&__description {
-		margin-bottom: 45px;
-	}
-
-	&__list-cards {
-    margin-bottom: 70px;
-	}
-}
 

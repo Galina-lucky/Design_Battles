@@ -222,61 +222,6 @@ a {
   list-style: none;
 }
 
-.enumerator {
-  max-width: 860px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.enumerator__block {
-  background-color: #460340;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 19%;
-          flex: 0 0 19%;
-}
-.enumerator__block--transparent {
-  background-color: transparent;
-}
-.enumerator__number {
-  font-family: "Open Sans", sans-serif;
-  font-size: 72px;
-  font-weight: 700;
-}
-.enumerator__dimension {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.countdown__title {
-  margin-bottom: 60px;
-}
-
-.section-jury {
-  padding-top: 150px;
-  padding-bottom: 120px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#339), to(#f0c));
-  background: linear-gradient(to bottom, #339 0%, #f0c 100%);
-  color: #fff;
-  text-align: center;
-}
-.section-jury__title {
-  margin-bottom: 50px;
-}
-.section-jury__description {
-  margin-bottom: 45px;
-}
-.section-jury__list-cards {
-  margin-bottom: 70px;
-}
-
 .header {
   background-color: #0e0d1b;
   background-image: url(../image/fon-header.jpg);
@@ -469,6 +414,108 @@ a {
 }
 .section-about__btn:active {
   background-color: #7f0979;
+}
+
+.section-jury {
+  padding-top: 150px;
+  padding-bottom: 120px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#339), to(#f0c));
+  background: linear-gradient(to bottom, #339 0%, #f0c 100%);
+  color: #fff;
+  text-align: center;
+}
+.section-jury__title {
+  margin-bottom: 50px;
+}
+.section-jury__description {
+  margin-bottom: 45px;
+}
+.section-jury__list-cards {
+  margin-bottom: 70px;
+}
+
+.card {
+  margin-bottom: 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+}
+.card__avatar {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.card__name {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.card__position {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.enumerator {
+  max-width: 860px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.enumerator__block {
+  padding: 33px 38px 25px 38px;
+  background-color: #460340;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18.5%;
+          flex: 0 0 18.5%;
+  line-height: 1;
+}
+.enumerator__block--transparent {
+  background-color: transparent;
+  border: 2px solid #faaced;
+}
+.enumerator__number {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.enumerator__dimension {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.countdown__title {
+  margin-bottom: 60px;
+}
+.countdown__enumerator {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
