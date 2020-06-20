@@ -46,9 +46,27 @@
 }
 
 .link-logo {
+	display: block;
+	padding: 6px 9px;
 	font-size: $logo-font-size;
-	color: $font-color-secondary;
 	font-weight: 500;
+	color: $font-color-secondary;
+	border-radius: 25%;
+	outline: none;
+
+
+	&:hover {
+    text-shadow: 0 0 10px $font-color-secondary;
+    box-shadow: 0 0px 15px 3px $font-color-secondary;
+	}
+
+	&:focus {
+    box-shadow: 0 0px 15px 3px $font-color-secondary;
+	}
+
+	&:active {
+    box-shadow: 0 0px 15px 4px $link-active-color;
+	}
 }
 
 .menu {

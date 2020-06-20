@@ -43,39 +43,45 @@
 }
 
 
+.section-sponsors {
+	background-color: $bg-color-primary;
+	padding-top: 90px;
+	padding-bottom: 112px;
 
-.card {
-  margin-bottom: 30px;
-  flex: 0 0 33%;
-
-	&__avatar {
-		margin-bottom: 20px;
-		border-radius: 10px;
+	&__title {
+		text-align: center;
+		margin-bottom: 70px;
 	}
 
-	&__name {
-    font-size: $xl-font-size;
-    font-weight: 500;
-    line-height: 1.5;
-    margin-bottom: 15px;
+	&__list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+    list-style: none;
 	}
 
-	&__position {
-		display: block;
-	  overflow: hidden;
-	  text-overflow: ellipsis; 
+	&__item {
+		border-radius: 30%;
+
+	  &:hover {
+	    box-shadow: 0 0 10px $font-color-primary;
+    }
+
+    &:focus {
+    	box-shadow: 0 0 10px $font-color-primary;
+    }
+
+    &:active {
+    	box-shadow: 0 0 10px $link-active-color;
+    }
+	}
+
+	&__link-sponsor {
+  }
+
+	&__logo {
+    display: block;
+    // max-width: 100%;
+    // height: auto;
 	}
 }
-
-.list-cards {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	list-style: none;
-
-	&__card {
-	}
-}
-
-
-

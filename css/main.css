@@ -186,40 +186,44 @@ a {
   line-height: 1.818181;
 }
 
-.card {
-  margin-bottom: 30px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33%;
-          flex: 0 0 33%;
+.section-sponsors {
+  background-color: #fff;
+  padding-top: 90px;
+  padding-bottom: 112px;
 }
-.card__avatar {
-  margin-bottom: 20px;
-  border-radius: 10px;
+.section-sponsors__title {
+  text-align: center;
+  margin-bottom: 70px;
 }
-.card__name {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-.card__position {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.list-cards {
+.section-sponsors__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   list-style: none;
+}
+.section-sponsors__item {
+  border-radius: 30%;
+}
+.section-sponsors__item:hover {
+  -webkit-box-shadow: 0 0 10px #444;
+          box-shadow: 0 0 10px #444;
+}
+.section-sponsors__item:focus {
+  -webkit-box-shadow: 0 0 10px #444;
+          box-shadow: 0 0 10px #444;
+}
+.section-sponsors__item:active {
+  -webkit-box-shadow: 0 0 10px #e71cb4;
+          box-shadow: 0 0 10px #e71cb4;
+}
+.section-sponsors__logo {
+  display: block;
 }
 
 .header {
@@ -272,9 +276,26 @@ a {
 }
 
 .link-logo {
+  display: block;
+  padding: 6px 9px;
   font-size: 33.51px;
-  color: #fff;
   font-weight: 500;
+  color: #fff;
+  border-radius: 25%;
+  outline: none;
+}
+.link-logo:hover {
+  text-shadow: 0 0 10px #fff;
+  -webkit-box-shadow: 0 0px 15px 3px #fff;
+          box-shadow: 0 0px 15px 3px #fff;
+}
+.link-logo:focus {
+  -webkit-box-shadow: 0 0px 15px 3px #fff;
+          box-shadow: 0 0px 15px 3px #fff;
+}
+.link-logo:active {
+  -webkit-box-shadow: 0 0px 15px 4px #e71cb4;
+          box-shadow: 0 0px 15px 4px #e71cb4;
 }
 
 .menu {
@@ -416,7 +437,7 @@ a {
   background-color: #7f0979;
 }
 
-.section-jury {
+.section-competitors {
   padding-top: 150px;
   padding-bottom: 120px;
   background: -webkit-gradient(linear, left top, left bottom, from(#339), to(#f0c));
@@ -424,13 +445,13 @@ a {
   color: #fff;
   text-align: center;
 }
-.section-jury__title {
+.section-competitors__title {
   margin-bottom: 50px;
 }
-.section-jury__description {
+.section-competitors__description {
   margin-bottom: 45px;
 }
-.section-jury__list-cards {
+.section-competitors__list-cards {
   margin-bottom: 70px;
 }
 
