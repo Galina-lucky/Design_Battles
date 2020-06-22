@@ -18,39 +18,6 @@
 	}
 }
 
-.card {
-  margin-bottom: 30px;
-  flex: 0 0 33%;
-
-	&__avatar {
-		margin-bottom: 20px;
-		border-radius: 10px;
-	}
-
-	&__name {
-    font-size: $xl-font-size;
-    font-weight: 500;
-    line-height: 1.5;
-    margin-bottom: 15px;
-	}
-
-	&__position {
-		display: block;
-	  overflow: hidden;
-	  text-overflow: ellipsis; 
-	}
-}
-
-.list-cards {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	list-style: none;
-
-	&__card {
-	}
-}
-
 .enumerator {
 	max-width: 860px;
 	display: flex;
