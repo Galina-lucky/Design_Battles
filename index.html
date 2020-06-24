@@ -180,10 +180,40 @@
 				<p class="description section-contact__description">
 					Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.
 				</p>
-				<form>
-					
-				</form>
+					<form class="form-contact">
+						<div class="wrapper-input">
+							<input class="form-contact__field" name="first-name" required="" type="text" value=""></input>
+							<label class="form-contact__caption" for="first-name">First name</label>
+						</div>
+            <div class="wrapper-input">
+              <input class="form-contact__field" name="last-name" required="" type="text" value=""></input>
+              <label class="form-contact__caption" for="last-name">Last name</label>
+            </div>
+            <div class="wrapper-input">
+              <input class="form-contact__field" name="email" required="" type="email" value=""></input>
+              <label class="form-contact__caption" for="email">Email</label>
+            </div>
+            <div class="wrapper-input">
+              <input class="form-contact__field" name="website" required="" type="text" value=""></input>
+              <label class="form-contact__caption" for="website">Website</label>
+            </div>
+            <div class="wrapper-input wrapper-input--big">
+              <textarea class="form-contact__field form-contact__field--message" name="message" required="" value=""></textarea>
+              <label class="form-contact__caption" for="message">Message</label>
+            </div> 
+            <input class="btn form-contact__btn" type="submit" name="submit"  value="Send Message">
+        </form>
 			</div>
 		</section>
 	</main>
+	<footer class="footer">
+		<div class="container">
+			<h3 class="footer__title">Newsletter</h3>
+		  <p class="footer__lead">If you would like to hear first and to receive updates please subscribe to our newsletter.</p>
+		  <form class="footer__form-subscribe form-subscribe">
+			  <input class="form-subscribe__field" type="email" name="distribution-emeil" placeholder="email address" value="">
+			  <input class="btn form-subscribe__btn" type="submit" name="submit" value="Subscribe">
+		  </form>
+		</div>
+	</footer>
 </body>
