@@ -18,13 +18,13 @@
 	}
 
 	&__list {
+		margin-bottom: 15px;
     max-height: 370px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    // justify-content: space-between; 
-    list-style: none;
-    margin-bottom: 15px;
+    list-style-type: none;
+    counter-reset: num;
 	}
 
 	&__item {
@@ -32,13 +32,11 @@
 		margin-bottom: 65px;
 		padding-left: 195px;
 		width: 50%;
-		// max-height: 2em*$line-height;
 		display: block;
 		flex: 1 0 2em*$line-height;
 		font-size: $xl-font-size;
     font-weight: 500;
     overflow: hidden;
-    border: 1px solid red;
 
     &:before {
     	content: " ";
@@ -49,12 +47,32 @@
 			transform: rotate(-45deg);
 			width: 15px;
 			height: 15px;
-			border-right: 2px solid green;
-			border-bottom: 2px solid green;
+			border-right: 2px solid ;
+			border-bottom: 2px solid;
     }
 
     &:after {
+      counter-increment: num;
+      content: counter(num) ".";
+      display: block;
+      position: absolute;
+      top: -8px;
+      left: 98px;
+      font-size: 44px;
+      font-weight: 700;
+    }
 
+    &:nth-child(-n+9):after {
+    	content: "0" counter(num) "."; 
+    }
+    
+    @each $index, $color in $color-list-number {
+  	  &:nth-child(#{$index}) {
+  	    &:before, 
+  	    &:after {
+          color: $color;
+  	    }
+      }
     }
 	}
 
@@ -80,21 +98,5 @@
 		color: $font-color-secondary;
 		background-color: $btn-bg-color;
 		border-color: transparent;
-
-		&:hover {
-      color: $btn-bg-color;
-      background-color: $font-color-secondary;
-      border-color: $btn-bg-color;
-      box-shadow: 0 0 15px $btn-bg-color;
-		}
-
-		&:focus {
-      background-color: lighten($btn-bg-color, 25);
-      box-shadow: 0 0 15px darken($btn-bg-color, 25);
-		}
-
-		&:active {
-      background-color: darken($btn-bg-color, 15);
-		}
 	}
 }

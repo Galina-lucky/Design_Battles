@@ -24,12 +24,15 @@
 
 	&__btn {
 		&:hover {
+			color: $font-color-secondary;
       background-color: rgba(225, 225, 225, 0.4);
+      border-color: $btn-border-color;
       box-shadow: 0 0 15px $bg-color-primary;
 		}
 
 		&:focus {
       background-color: rgba(225, 225, 225, 0.4);
+      box-shadow: none;
 		}
 
 		&:active {
@@ -53,20 +56,6 @@
 	color: $font-color-secondary;
 	border-radius: 25%;
 	outline: none;
-
-
-	&:hover {
-    text-shadow: 0 0 10px $font-color-secondary;
-    box-shadow: 0 0px 15px 3px $font-color-secondary;
-	}
-
-	&:focus {
-    box-shadow: 0 0px 15px 3px $font-color-secondary;
-	}
-
-	&:active {
-    box-shadow: 0 0px 15px 4px $link-active-color;
-	}
 }
 
 .menu {

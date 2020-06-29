@@ -8,6 +8,7 @@
 	<meta name="description" content="" />
 	<link rel="icon" href="image/icons.ico">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -46,14 +47,16 @@
 					Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
 			  </p>
 				<h3 class="section-about__title-list">What is the course of the Battles?</h3>
-				<ul class="section-about__list">
+
+				<ol class="section-about__list">
 					<li class="section-about__item">Cras ultricies ligula sed mag.</li>
 					<li class="section-about__item">Pellentesque in ipsum id orci porta dapibus.</li>
 					<li class="section-about__item">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem</li>
 					<li class="section-about__item">Cras ultricies ligula sed magna dictum portaurabitur arcu.</li>
 					<li class="section-about__item">Proin eget tortor risus.</li>
 					<li class="section-about__item">Nulla quis lorem ut libero malesuada feugiat.</li>
-				</ul>
+				</ol>
+				
 				<p class="description section-about__description">
 					Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.					
 				</p>
@@ -182,23 +185,23 @@
 				</p>
 					<form class="form-contact">
 						<div class="wrapper-input">
-							<input class="form-contact__field" name="first-name" required="" type="text" value=""></input>
+							<input class="form-contact__field" name="first-name" required="" type="text" value="" placeholder=" "></input>
 							<label class="form-contact__caption" for="first-name">First name</label>
 						</div>
             <div class="wrapper-input">
-              <input class="form-contact__field" name="last-name" required="" type="text" value=""></input>
+              <input class="form-contact__field" name="last-name" required="" type="text" value="" placeholder=" "></input>
               <label class="form-contact__caption" for="last-name">Last name</label>
             </div>
             <div class="wrapper-input">
-              <input class="form-contact__field" name="email" required="" type="email" value=""></input>
+              <input class="form-contact__field" name="email" required="" type="email" value="" placeholder=" "></input>
               <label class="form-contact__caption" for="email">Email</label>
             </div>
             <div class="wrapper-input">
-              <input class="form-contact__field" name="website" required="" type="text" value=""></input>
+              <input class="form-contact__field" name="website" required="" type="text" value="" placeholder=" "></input>
               <label class="form-contact__caption" for="website">Website</label>
             </div>
             <div class="wrapper-input wrapper-input--big">
-              <textarea class="form-contact__field form-contact__field--message" name="message" required="" value=""></textarea>
+              <textarea class="form-contact__field form-contact__field--message" name="message" required="" value="" placeholder=" "></textarea>
               <label class="form-contact__caption" for="message">Message</label>
             </div> 
             <input class="btn form-contact__btn" type="submit" name="submit"  value="Send Message">
@@ -214,6 +217,29 @@
 			  <input class="form-subscribe__field" type="email" name="distribution-emeil" placeholder="email address" value="">
 			  <input class="btn form-subscribe__btn" type="submit" name="submit" value="Subscribe">
 		  </form>
+		  <ul class="social-list footer__social-list">
+				<li class="social-list__item">
+					<a class="social-list__icon" href="https://twitter.com/explore" title="Поделиться в Twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__icon" href="https://dribbble.com/" title="Dribbble">
+						<i class="fab fa-dribbble"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__icon" href="https://www.instagram.com/?hl=ru" title="Поделиться в Instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__icon" href="https://www.pinterest.com/" title="Pinterest">
+						<i class="fab fa-pinterest-p"></i>
+					</a>
+				</li>
+			</ul>					
 		</div>
 	</footer>
 </body>
+

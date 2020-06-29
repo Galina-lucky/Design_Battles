@@ -6,11 +6,11 @@
 	margin-right: auto;
 }
 
-.img-responsive {
-	display: block;
-	min-width: 100%;
-	height: auto;
-}
+// .img-responsive {
+// 	display: block;
+// 	min-width: 100%;
+// 	height: auto;
+// }
 
 .btn {
 	display: inline-block;
@@ -30,6 +30,22 @@
 	border-radius: 10px;
 	outline: none;
 	box-shadow: none;
+
+	&:hover {
+    color: $btn-bg-color;
+    background-color: $font-color-secondary;
+    border-color: $btn-bg-color;
+    box-shadow: 0 0 15px $btn-bg-color;
+  }
+	
+	&:focus {
+    background-color: lighten($btn-bg-color, 25);
+    box-shadow: 0 0 15px darken($btn-bg-color, 25);
+	}
+
+	&:active {
+    background-color: darken($btn-bg-color, 15);
+	}
 }
 
 .title {
@@ -74,47 +90,3 @@
 	&__card {
 	}
 }
-
-.footer {
-	padding-top: 73px;
-	padding-bottom: 60px;
-	background-color: $bg-color-footer;
-  text-align: center;
-
-	&__title {
-		margin-bottom: 45px;
-		font-size: $h3-font-size;
-	}
-
-	&__lead {
-    font-weight: 400;
-    margin-bottom: 25px;
-	}
-}
-
-.form-subscribe {
-	font-size: 18px;
-
-	&__field {
-		padding: 23px 20px;
-		width: 34%;
-		background-color: $bg-color-primary;
-		border: none;
-		border-radius: 10px;
-		outline: none;
-    margin-right: 8px;
-	}
-
-	&__btn {
-		min-width: 135px;
-		padding: 1.388888em 1.222222em 1.111111em;
-    background-color: $btn-bg-color;
-    border: 2px solid transparent;
-	}
-}
-
-
-
-
-	
-  
