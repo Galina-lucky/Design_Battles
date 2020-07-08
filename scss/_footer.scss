@@ -24,7 +24,7 @@
 	&__field {
 		margin-right: 8px;
 		padding: 0.888888em 1.111111em 1em;
-		width: 34%;
+		min-width: 387px;
 		line-height: 1;
 		background-color: $bg-color-primary;
 		border: 2px solid transparent;
@@ -32,26 +32,17 @@
 		outline: none;
 
 		&:hover {
-      border: 2px solid $form-color;
-      box-shadow: 0 0 15px lighten($form-color, 10);
+      border: 2px solid $input-color;
+      box-shadow: 0 0 15px lighten($input-color, 10);
 		}
 
 		&:focus {
-      box-shadow: 0 0 15px lighten($form-color, 10);
+      box-shadow: 0 0 15px lighten($input-color, 10);
 		}
 
 		&:active {
-      background-color: darken($bg-color-footer, 5);
+      background-color: darken($bg-color-footer, 25);
 		}
-	}
-
-	&__btn {
-		min-width: 135px;
-		padding: 1.388888em 1.222222em 1.111111em;
-    background-color: $btn-bg-color;
-    border: 2px solid transparent;
-    color: $font-color-secondary;
-    font-weight: 700;
 	}
 }
 

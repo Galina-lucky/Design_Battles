@@ -9,38 +9,38 @@
 	<link rel="icon" href="image/icons.ico">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<header class="header">
 		<div class="container">
 			<nav class="nav">
-        <a class="link-logo" href="#">Event</a>
+        <a class="logo" href="#">Event</a>
         <ul class="menu">
           <li class="menu__item">
-              <a class="menu__link" href="#about">About</a>
+            <a class="menu__link" href="#about">About</a>
           </li>
           <li class="menu__item">
-              <a class="menu__link" href="#jury">Jury</a>
+            <a class="menu__link" href="#jury">Jury</a>
           </li>
           <li class="menu__item">
-              <a class="menu__link" href="#competitors">Competitors</a>
+            <a class="menu__link" href="#competitors">Competitors</a>
           </li>
           <li class="menu__item">
-              <a class="menu__link" href="#contact">Contact Us</a>
+            <a class="menu__link" href="#contact">Contact Us</a>
           </li>
         </ul>
       </nav>
       <div class="header__info">
       	<h1 class="header__title">Are you ready for the Battle?</h1>
       	<p class="header__lead">The clash between graphic designers</p>
-      	<button class="btn header__btn">Download Our Case Study</button>
+      	<button class="btn btn--outline">Download Our Case Study</button>
       </div>
 		</div>
 	</header>
 	<main>
-		<section class="section-about" id="#about">
+		<section id="#about" class="section-about">
 			<div class="container">
 				<h2 class="title section-about__title">Design Battles</h2>
 				<p class="section-about__lead">
@@ -48,117 +48,115 @@
 			  </p>
 				<h3 class="section-about__title-list">What is the course of the Battles?</h3>
 
-				<ol class="section-about__list">
-					<li class="section-about__item">Cras ultricies ligula sed mag.</li>
-					<li class="section-about__item">Pellentesque in ipsum id orci porta dapibus.</li>
-					<li class="section-about__item">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem</li>
-					<li class="section-about__item">Cras ultricies ligula sed magna dictum portaurabitur arcu.</li>
-					<li class="section-about__item">Proin eget tortor risus.</li>
-					<li class="section-about__item">Nulla quis lorem ut libero malesuada feugiat.</li>
+				<ol class="list-increment">
+					<li class="list-increment__item">Cras ultricies ligula sed mag.</li>
+					<li class="list-increment__item">Pellentesque in ipsum id orci porta dapibus.</li>
+					<li class="list-increment__item">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem</li>
+					<li class="list-increment__item">Cras ultricies ligula sed magna dictum portaurabitur arcu.</li>
+					<li class="list-increment__item">Proin eget tortor risus.</li>
+					<li class="list-increment__item">Nulla quis lorem ut libero malesuada feugiat.</li>
 				</ol>
 				
-				<p class="description section-about__description">
+				<p class="description">
 					Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.					
 				</p>
-				<h4 class="section-about__dates">Submissions starts on 10/12/2017 and end on 11/12/2017</h4>
-				<p class="section-about__dates-description">
+				<h3 class="section-about__date">Submissions starts on 10/12/2017 and end on 11/12/2017</h3>
+				<p class="section-about__date-description">
 				  Nulla quis lorem ut libero malesuada feugiat eget tincidunt nibh pulvinar.
 				</p>
-				<button class="btn section-about__btn">Download Our Case Study</button>
+				<button class="btn btn--primary btn--xl">Download Our Case Study</button>
 			</div>
 		</section>
-		<section class="section-competitors" id="#competitors">
+		<section id="#competitors" class="section-competitors">
 			<div class="container">
-				<h2 class="title section-competitors__title">They already said Battles</h2>
+				<h2 class="title">They already said Battles</h2>
 				<p class="description section-competitors__description">
 					Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Estibulum ante ipsum primis in faucibus orci luctus et ultrices.
 			  </p>
 			  <ul class="list-cards section-competitors__list-cards">
-			  	<li class="card list-cards__card">
+			  	<li class="card list-cards__item">
 			  		<img class="card__avatar" src="image/competitors_1.jpg" alt="competitor">
 			  		<p class="card__name">John Stone</p>
 			  		<p class="card__position">Creative Director at Amazing Game</p>
 			  	</li>
-			  	<li class="card">
+			  	<li class="card list-cards__item">
 			  		<img class="card__avatar" src="image/competitors_2.jpg" alt="competitor">
 			  		<p class="card__name">John Stone</p>
 			  		<p class="card__position">Creative Director at Amazing Game</p>
 			  	</li>
-			  	<li class="card">
+			  	<li class="card list-cards__item">
 			  		<img class="card__avatar" src="image/competitors_3.jpg" alt="competitor">
 			  		<p class="card__name">John Stone</p>
 			  		<p class="card__position">Creative Director at Amazing Game</p>
 			  	</li>
-			  	<li class="card">
+			  	<li class="card list-cards__item">
 			  		<img class="card__avatar" src="image/competitors_4.jpg" alt="competitor">
 			  		<p class="card__name">John Stone</p>
 			  		<p class="card__position">Creative Director at Amazing Game</p>
 			  	</li>
-			  	<li class="card">
+			  	<li class="card list-cards__item">
 			  		<img class="card__avatar" src="image/competitors_5.jpg">
 			  		<p class="card__name">John Stone</p>
 			  		<p class="card__position">Creative Director at Amazing Game</p>
 			  	</li>
-			  	<li class="card">
+			  	<li class="card list-cards__item">
 			  		<img class="card__avatar" src="image/competitors_6.jpg">
 			  		<p class="card__name">John Stone</p>
 			  		<p class="card__position">Creative Director at Amazing Game</p>
 			  	</li>
 			  </ul>
-			  <div class="countdown section-competitors__countdown">
-			    <h2 class="title countdown__title">Countdown</h2>
-			    <div class="enumerator countdown__enumerator">
-			  	  <div class="enumerator__block enumerator__block--transparent">
-			  		  <span class="enumerator__number">37</span>
-			  		  <span class="enumerator__dimension">days</span>
-			  	  </div>
-			  	  <div class="enumerator__block">
-			  		  <span class="enumerator__number">13</span>
-			  		  <span class="enumerator__dimension">hours</span>
-			  	  </div>
-				  	<div class="enumerator__block">
-				  		<span class="enumerator__number">45</span>
-				  		<span class="enumerator__dimension">minutes</span>
-				  	</div>
-				  	<div class="enumerator__block">
-				  		<span class="enumerator__number">26</span>
-				  		<span class="enumerator__dimension">seconds</span>
-				  	</div>
-			    </div>
-        </div>
-			</div>
+				<h2 class="title">Countdown</h2>
+				<div class="enumerator">
+		  	  <div class="enumerator__item enumerator__item--outline">
+		  		  <p class="enumerator__number">37</p>
+		  		  <p class="enumerator__dimension">days</p>
+		  	  </div>
+		  	  <div class="enumerator__item">
+		  		  <p class="enumerator__number">13</p>
+		  		  <p class="enumerator__dimension">hours</p>
+		  	  </div>
+			  	<div class="enumerator__item">
+			  		<p class="enumerator__number">45</p>
+			  		<p class="enumerator__dimension">minutes</p>
+			  	</div>
+			  	<div class="enumerator__item">
+			  		<p class="enumerator__number">26</p>
+			  		<p class="enumerator__dimension">seconds</p>
+			  	</div>
+		    </div>
+		  </div>
 		</section>
 		<section class="section-sponsors">
 			<div class="container">
-				<h2 class="title section-sponsors__title">Sponsorship</h2>
-				<ul class="section-sponsors__list">
-					<li class="section-sponsors__item">
-						<a class="section-sponsors__link-sponsor" href="https://speckyboy.com/">
-							<img class="section-sponsors__logo" src="image/sponsor-01.png" alt="Sponsor">
+				<h2 class="title">Sponsorship</h2>
+				<ul class="sponsors">
+					<li class="sponsors__item">
+						<a href="https://speckyboy.com/">
+							<img src="image/sponsor-01.jpg" alt="Sponsor Speckyboy">
 						</a>
 					</li>
-					<li class="section-sponsors__item">
-						<a class="section-sponsors__link-sponsor" href="#">
-							<img class="section-sponsors__logo" src="image/sponsor-02.png" alt="Sponsor">
+					<li class="sponsors__item">
+						<a href="#">
+							<img src="image/sponsor-02.jpg" alt="Sponsor DWB">
 						</a>
 					</li>
-					<li class="section-sponsors__item">
-						<a class="section-sponsors__link-sponsor" href="https://webdesignledger.com/">
-							<img class="section-sponsors__logo" src="image/sponsor-03.png" alt="Sponsor">
+					<li class="sponsors__item">
+						<a href="https://webdesignledger.com/">
+							<img src="image/sponsor-03.jpg" alt="Sponsor Webdesignledger">
 						</a>
 					</li>
-					<li class="section-sponsors__item">
-						<a class="section-sponsors__link-sponsor" href="http://www.instantshift.com/">
-							<img class="section-sponsors__logo" src="image/sponsor-04.png" alt="Sponsor">
+					<li class="sponsors__item">
+						<a href="http://www.instantshift.com/">
+							<img src="image/sponsor-04.jpg" alt="Sponsor Instantshift">
 						</a>
 					</li>
 				</ul>
 			</div>
 		</section>
-		<section class="section-jury" id="#jury">
+		<section id="#jury" class="section-jury">
 			<div class="container">
-				<h2 class="title section-jury__title">Jury 2017</h2>
-				<ul class="list-cards section-jury__list-cards">
+				<h2 class="title">Jury 2017</h2>
+				<ul class="list-cards">
 			  	<li class="card list-cards__card">
 			  		<img class="card__avatar" src="image/jury-1.png" alt="jury">
 			  		<p class="card__name">John Stone</p>
@@ -177,47 +175,47 @@
 			  </ul>
 			</div>
 		</section>
-		<section class="section-contact" id="#contact">
+		<section id="#contact" class="section-contact">
 			<div class="container">
-				<h2 class="title section-contact__title">Contact Us</h2>
+				<h2 class="title">Contact Us</h2>
 				<p class="description section-contact__description">
 					Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.
 				</p>
-					<form class="form-contact">
-						<div class="wrapper-input">
-							<input class="form-contact__field" name="first-name" required="" type="text" value="" placeholder=" "></input>
-							<label class="form-contact__caption" for="first-name">First name</label>
-						</div>
-            <div class="wrapper-input">
-              <input class="form-contact__field" name="last-name" required="" type="text" value="" placeholder=" "></input>
-              <label class="form-contact__caption" for="last-name">Last name</label>
-            </div>
-            <div class="wrapper-input">
-              <input class="form-contact__field" name="email" required="" type="email" value="" placeholder=" "></input>
-              <label class="form-contact__caption" for="email">Email</label>
-            </div>
-            <div class="wrapper-input">
-              <input class="form-contact__field" name="website" required="" type="text" value="" placeholder=" "></input>
-              <label class="form-contact__caption" for="website">Website</label>
-            </div>
-            <div class="wrapper-input wrapper-input--big">
-              <textarea class="form-contact__field form-contact__field--message" name="message" required="" value="" placeholder=" "></textarea>
-              <label class="form-contact__caption" for="message">Message</label>
-            </div> 
-            <input class="btn form-contact__btn" type="submit" name="submit"  value="Send Message">
+				<form class="form-contact">
+					<div class="form-contact__field">
+						<input id="first-name" class="form-contact__input" name="first-name" required="" type="text" pattern="[A-Za-z]" value="" placeholder=" ">
+						<label class="form-contact__caption" for="first-name">First name</label>
+					</div>
+          <div class="form-contact__field">
+            <input id="last-name" class="form-contact__input" name="last-name" required="" type="text" pattern="[A-Za-z]" value="" placeholder=" ">
+            <label class="form-contact__caption" for="last-name">Last name</label>
+          </div>
+          <div class="form-contact__field">
+            <input id="email" class="form-contact__input" name="email" required="" type="email" value="" placeholder=" ">
+            <label class="form-contact__caption" for="email">Email</label>
+          </div>
+          <div class="form-contact__field">
+            <input id="website" class="form-contact__input" name="website" required="" type="text" value="" placeholder=" ">
+            <label class="form-contact__caption" for="website">Website</label>
+          </div>
+          <div class="form-contact__field form-contact__field--big">
+            <textarea id="message" class="form-contact__input form-contact__input--message" name="message" required="" value="" placeholder=" "></textarea>
+            <label class="form-contact__caption" for="message">Message</label>
+          </div>
+          <button class="btn btn--secondary btn--m btn--for-contact" type="submit">Send Message</button>
         </form>
 			</div>
 		</section>
 	</main>
 	<footer class="footer">
 		<div class="container">
-			<h3 class="footer__title">Newsletter</h3>
+			<h2 class="footer__title">Newsletter</h2>
 		  <p class="footer__lead">If you would like to hear first and to receive updates please subscribe to our newsletter.</p>
-		  <form class="footer__form-subscribe form-subscribe">
-			  <input class="form-subscribe__field" type="email" name="distribution-emeil" placeholder="email address" value="">
-			  <input class="btn form-subscribe__btn" type="submit" name="submit" value="Subscribe">
+		  <form class="form-subscribe">
+			  <input class="form-subscribe__field" type="email" name="email" placeholder="email address" value="">
+			  <button class="btn btn--primary btn--s" type="submit">Subscribe</button>
 		  </form>
-		  <ul class="social-list footer__social-list">
+		  <ul class="social-list">
 				<li class="social-list__item">
 					<a class="social-list__icon" href="https://twitter.com/explore" title="Поделиться в Twitter">
 						<i class="fab fa-twitter"></i>

@@ -1,8 +1,15 @@
-$COLOR-WHITE: #fff;
-$COLOR-PINK: #e71cb4;
+$COLOR_WHITE: #fff;
+$COLOR_PINK: #e71cb4;
 
-$font-family-base: 'Poppins', sans-serif;
-$font-family-secondary: 'Open Sans', sans-serif;
+$dark-grey: #444;
+$black: #000000;
+$dark-purple: #460340;
+$light-gray: #eee;
+$pale-gray: #ddd;
+$dark-pink: #c60ebe;
+
+$font-family-base: 'Poppins', 'Arial', 'Helvetica', sans-serif;
+$font-family-secondary: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
 $line-height: 1.2;
 
 $base-font-size: 16px;
@@ -17,23 +24,23 @@ $description-font-size: 22px;
 $m-font-size: 14px;
 $s-font-size: 13px;
 
-$font-color-primary: #444;
-$font-color-secondary: $COLOR-WHITE;
+$bg-color-primary: $COLOR_WHITE;
+$bg-color-secondary: $black;
+$bg-color-enumerator: $dark-purple;
+$bg-color-footer: $light-gray;
+
+$font-color-primary: $dark-grey;
+$font-color-secondary: $COLOR_WHITE;
 $h2-color: $COLOR-PINK;
 
-$form-color: #555555;
+$input-color: $dark-grey;
 
-$bg-color-primary: $COLOR-WHITE;
-$bg-color-secondary: #0e0d1b;
-$bg-color-enumerator: #460340;
-$bg-color-footer: #eee;
+$btn-border-color: $pale-gray;
+$btn-bg-color: $dark-pink;
 
-$btn-border-color: #ddd;
-$btn-bg-color: #c60ebe;
+// убрать. использовать из палитры.
 
-$menu-hover-color: $COLOR-PINK;
-
-$link-active-color: $COLOR-PINK;
+$link-active-color: $COLOR_PINK;
 
 $color-list-number: (1: #ffde16, 2: #ffbd9e, 3: #20c9e0, 4: #2eac66, 5: #ff6179, 6: #ffde16)
 

@@ -3,13 +3,16 @@
 	background-image: url(../image/fon-header.jpg);
 	background-size: cover;
 	padding-top: 30px;
-	min-height: 800px;
+  height: 100vh;
+  position: relative;
 
 	&__info {
-		margin-top: 230px;
+		position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
 		color: $font-color-secondary;
 		text-align: center;
-		margin-bottom: 260px;
 	}
 
 	&__title {
@@ -21,24 +24,6 @@
     font-size: $h4-font-size;
     margin-bottom: 70px;
 	}
-
-	&__btn {
-		&:hover {
-			color: $font-color-secondary;
-      background-color: rgba(225, 225, 225, 0.4);
-      border-color: $btn-border-color;
-      box-shadow: 0 0 15px $bg-color-primary;
-		}
-
-		&:focus {
-      background-color: rgba(225, 225, 225, 0.4);
-      box-shadow: none;
-		}
-
-		&:active {
-      background-color: rgba(225, 225, 225, 0.7);
-		}
-	}
 }
 
 .nav {
@@ -46,15 +31,15 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+
 }
 
-.link-logo {
+.logo {
 	display: block;
 	padding: 6px 9px;
 	font-size: $logo-font-size;
 	font-weight: 500;
 	color: $font-color-secondary;
-	border-radius: 25%;
 	outline: none;
 }
 
@@ -77,25 +62,25 @@
 		outline: none;
 
 		&:hover {
-			color: $menu-hover-color;
+			color: $COLOR_PINK;
 
 			&:before {
 			width: calc(100% - 30px); 
-	    background-color: $menu-hover-color;
+	    background-color: $COLOR_PINK;
 		  }
 		}
 
 		&:focus {
-      color: $menu-hover-color;
+      color: $COLOR_PINK;
 		}
 
 		&:active {
-      color: darken($menu-hover-color, 15);
+      color: darken($COLOR_PINK, 15);
 		}
 
 		&:before {
-			display: block;
 			content: "";
+			display: block;
 			position: absolute;
 			left: 15px;
 			bottom: 0; 

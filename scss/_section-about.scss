@@ -1,59 +1,39 @@
-.section-about {
-	padding-top: 150px;
-	padding-bottom: 153px;
+.list-increment {
+  margin-bottom: 15px;
+  max-height: 370px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: none;
+  counter-reset: num;
 
-	&__title {
-		color: $h2-color;
-		margin-bottom: 90px;
-	}
-
-	&__lead {
-		font-size: $big-font-size;
-		margin-bottom: 140px;
-	}
-
-	&__title-list {
-		font-size: $h3-font-size;
-		margin-bottom: 85px;
-	}
-
-	&__list {
-		margin-bottom: 15px;
-    max-height: 370px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    list-style-type: none;
-    counter-reset: num;
-	}
-
-	&__item {
-		position: relative;
-		margin-bottom: 65px;
-		padding-left: 195px;
-		width: 50%;
-		display: block;
-		flex: 1 0 2em*$line-height;
-		font-size: $xl-font-size;
+  &__item {
+    position: relative;
+    margin-bottom: 65px;
+    padding-left: 195px;
+    width: 50%;
+    display: block;
+    flex: 1 0 2em*$line-height;
+    font-size: $xl-font-size;
     font-weight: 500;
     overflow: hidden;
 
     &:before {
-    	content: " ";
-    	display: block;
+      content: " ";
+      display: block;
       position: absolute;
-			top: 7px;
-			left: 25px;
-			transform: rotate(-45deg);
-			width: 15px;
-			height: 15px;
-			border-right: 2px solid ;
-			border-bottom: 2px solid;
+      top: 12px;
+      left: 25px;
+      transform: rotate(-45deg);
+      width: 15px;
+      height: 15px;
+      border-right: 4px solid ;
+      border-bottom: 4px solid;
     }
 
     &:after {
       counter-increment: num;
-      content: counter(num) ".";
+      content: counter(num, decimal-leading-zero) ".";
       display: block;
       position: absolute;
       top: -8px;
@@ -61,42 +41,46 @@
       font-size: 44px;
       font-weight: 700;
     }
-
-    &:nth-child(-n+9):after {
-    	content: "0" counter(num) "."; 
-    }
     
     @each $index, $color in $color-list-number {
-  	  &:nth-child(#{$index}) {
-  	    &:before, 
-  	    &:after {
+      &:nth-child(#{$index}) {
+        &:before, 
+        &:after {
           color: $color;
-  	    }
+        }
       }
     }
+  }
+}
+
+.section-about {
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+	&__title {
+    margin-bottom: 90px;
+		color: $h2-color;
+		text-align: left;
 	}
 
-	&__description {
-		margin-bottom: 70px;
+	&__lead {
+		margin-bottom: 140px;
+		font-size: $big-font-size;
+		line-height: 1.5;
 	}
 
-	&__dates {
+	&__title-list {
+		font-size: $h3-font-size;
+		margin-bottom: 85px;
+	}
+
+	&__date {
 		font-size: $h4-font-size;
 		margin-bottom: 35px;
 	}
 
-	&__dates-description {
+	&__date-description {
 		font-size: $m-font-size;
 		margin-bottom: 45px;
-	}
-
-	&__btn {
-		min-width: 458px;
-		padding: 0.88em 3.4090909em;
-		font-size: 22px;
-		font-weight: 400;	
-		color: $font-color-secondary;
-		background-color: $btn-bg-color;
-		border-color: transparent;
 	}
 }

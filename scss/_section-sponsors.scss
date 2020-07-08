@@ -1,40 +1,26 @@
 .section-sponsors {
-	background-color: $bg-color-primary;
 	padding-top: 90px;
 	padding-bottom: 112px;
+}
 
-	&__title {
-		text-align: center;
-		margin-bottom: 70px;
-	}
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
 
-	&__list {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-    list-style: none;
-	}
-
-	&__item {
-		border-radius: 30%;
-
-	  &:hover {
-	    box-shadow: 0 0 10px $font-color-primary;
+  &__item {
+    
+    &:hover {
+      opacity: 0.5;
     }
 
     &:focus {
-    	box-shadow: 0 0 10px $font-color-primary;
+      box-shadow: 0 0 10px $font-color-primary;
     }
 
     &:active {
-    	box-shadow: 0 0 10px $link-active-color;
+      box-shadow: 0 0 10px $dark-grey;
     }
-	}
-
-	&__link-sponsor {
   }
-
-	&__logo {
-    display: block;
-	}
 }
